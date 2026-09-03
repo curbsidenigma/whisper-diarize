@@ -213,6 +213,11 @@ written for it.
 One rule worth repeating: never attach a transcript, a recording, or a working
 prompt to an issue or a PR.
 
+## Changelog
+
+Release notes live in [CHANGELOG.md](CHANGELOG.md); tagged versions are on the
+[releases page](https://github.com/curbsidenigma/whisper-diarize/releases).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
