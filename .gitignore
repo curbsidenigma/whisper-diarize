@@ -1,0 +1,32 @@
+# Virtual environment
+.venv/
+venv/
+
+# Audio and transcripts are private data — never commit them
+input/*
+!input/.gitkeep
+!input/done/
+input/done/*
+!input/done/.gitkeep
+output/*
+!output/.gitkeep
+
+# Your own working prompts stay local; only prompts/examples/ is shared
+prompts/*.txt
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Claude Code local overrides
+.claude/settings.local.json

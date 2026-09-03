@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source .venv/bin/activate)",
+      "Bash(source ~/.bashrc)",
+      "Bash(nvidia-smi)",
+      "Bash(nvidia-smi:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv input/*)",
+      "Bash(cp:*)",
+      "Bash(python scripts/transcribe.py:*)",
+      "Bash(python scripts/transcribe_diarize.py:*)",
+      "Bash(python scripts/rename_speakers.py:*)",
+      "Read(./**)",
+      "Write(prompts/**)",
+      "Write(output/**)"
+    ],
+    "ask": ["Bash(pkill:*)", "Bash(rm:*)"]
+  }
+}

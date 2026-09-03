@@ -1,0 +1,18 @@
+# Install PyTorch FIRST, from the CUDA index — see README.md.
+# A plain `pip install torch` pulls the CPU-only build and nothing will run on GPU.
+#
+#   pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+#
+# Then: pip install -r requirements.txt
+
+faster-whisper==1.2.1
+whisperx==3.8.5
+ctranslate2==4.7.1
+
+# Diarization (pulled in by whisperx, pinned here so the versions are reproducible)
+pyannote-audio==4.0.4
+
+# CUDA runtime libraries for CTranslate2. These ship the cuBLAS/cuDNN .so files
+# that LD_LIBRARY_PATH must point at (see activate-env.sh).
+nvidia-cublas-cu12==12.8.4.1
+nvidia-cudnn-cu12==9.10.2.21
